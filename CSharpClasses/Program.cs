@@ -1,4 +1,5 @@
 ﻿using System;
+using CSharpClasses.Figures;
 
 namespace CSharpClasses
 {
@@ -6,7 +7,8 @@ namespace CSharpClasses
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var luna1 = new LunaLovegood();
+            luna1.FunFact("Voldemort");
         }
     }
 }
