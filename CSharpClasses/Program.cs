@@ -9,6 +9,7 @@ namespace CSharpClasses
         {
             var luna1 = new LunaLovegood();
             luna1.FunFact("Voldemort");
+            luna1.FunFact("Harry");
         }
     }
 }
