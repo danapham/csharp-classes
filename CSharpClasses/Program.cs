@@ -13,7 +13,15 @@ namespace CSharpClasses
             FiveOneTwoEigth.Stories = 9;
             FiveOneTwoEigth.Construct();
             FiveOneTwoEigth.Purchase("Harmony Korine");
-            FiveOneTwoEigth.DisplayInfo();
+
+            City Nashville = new City("Nashville");
+            Nashville.Establish();
+            Nashville.AddBuilding(FiveOneTwoEigth);
+
+            foreach (Building building in Nashville.Buildings)
+            {
+                building.DisplayInfo();
+            }
         }
     }
 }
