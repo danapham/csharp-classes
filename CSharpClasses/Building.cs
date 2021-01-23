@@ -19,10 +19,19 @@ namespace CSharpClasses
         public Building(string address)
         {
             _address = address;
+            _designer = "Dana Pham";
         }
 
         public void Construct() =>_dateConstructed = DateTime.Now;
         public void Purchase(string name) => _owner = name;
+        public void DisplayInfo()
+        {
+            Console.WriteLine(_address);
+            Console.WriteLine($"Designed by {_designer}");
+            Console.WriteLine($"Constructed on {_dateConstructed}");
+            Console.WriteLine($"Owned by {_owner}");
+            Console.WriteLine($"{Volume} cubic meters of space");
+        }
 
     }
 }
